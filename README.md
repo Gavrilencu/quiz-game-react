@@ -1,4 +1,4 @@
-## This project's answers/question were written on Russian.
+## This project's answers/question were written on Romanian.
 <ul>
 <li>🌟 Animated</li>
 <li>🌟 Progress Bar</li>
