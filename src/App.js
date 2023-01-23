@@ -3,25 +3,40 @@ import React from "react";
 //an array of objects (questions)
 const questions = [
   {
-    title: "React - это ... ?",
-    variants: ["библиотека", "фреймворк", "приложение"],
+    title: "Cite zile are un an bisect ?",
+    variants: ["364 zile", "365 zile", "366 zile"],
+    correct: 2,
+  },
+  {
+    title: "Cine a pictat renumitul tablou Mona Lisa ?",
+    variants: ["Leonardo Da Vinci", "Pablo Picasso", "Michelangelo"],
     correct: 0,
   },
   {
-    title: "Компонент - это ... ",
-    variants: [
-      "приложение",
-      "часть приложения или страницы",
-      "то, что я не знаю что такое",
-    ],
-    correct: 1,
+    title: "Cine a scris Romeo si Julieta ?",
+    variants: ["Sheakespeare", "Homer", "Herodot"],
+    correct: 0,
   },
   {
-    title: "Что такое JSX?",
+    title: "In ce galaxie se afla planeta noastra ?",
+    variants: ["Calea Lactee", "Andromeda", "Tera"],
+    correct: 0,
+  },
+  {
+    title: "Cite laturi are un hexagon? ",
     variants: [
-      "Это простой HTML",
-      "Это функция",
-      "Это тот же HTML, но с возможностью выполнять JS-код",
+      "4 laturi",
+      "5 laturi",
+      "6 laturi",
+    ],
+    correct: 2,
+  },
+  {
+    title: "Citi ani a durat razboiul de o suta de ani ?",
+    variants: [
+      "100 ani",
+      "94 ani",
+      "116 ani",
     ],
     correct: 2,
   },
@@ -32,10 +47,10 @@ function Result({ correct }) {
     <div className="result">
       <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
       <h2>
-        Вы отгадали {correct} ответа из {questions.length}
+        Ati raspuns corect la: {correct} intrebari din: {questions.length}
       </h2>
       <a href="/">
-        <button>Попробовать снова</button>
+        <button>Incearca din nou</button>
       </a>
     </div>
   );
